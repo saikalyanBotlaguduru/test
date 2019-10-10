@@ -1,0 +1,536 @@
+<html>
+
+<head>
+
+<title>CIG HTML </title>
+<style>
+body{font-family:arial;}
+a{color:black;text-decoration:none;font:bold}
+a:hover{color:#606060}
+td.menu{background:lightblue}
+
+table.navs
+{
+background:black;
+position:relative;
+font: bold 80% arial;
+top:0px;
+left:-135px;
+margin-left:3px;
+}
+</style>
+
+<script type="text/javascript">
+var i=-135;
+var c=0;
+var intHide;
+var speed=3;
+function show_hide_menu()
+{
+if (c==0)
+	{
+	c=1;
+	clearInterval(intHide);
+	intShow=setInterval("show()",10);
+	}
+else
+	{
+	c=0;
+	clearInterval(intShow);
+	intHide=setInterval("hide()",10);
+	}
+}
+function show()
+{
+if (i<-12)
+	{
+	i=i+speed;
+	document.getElementById('myMenu').style.left=i;
+	}
+}
+function hide()
+{
+if (i>-135)
+	{
+	i=i-speed;
+	document.getElementById('myMenus').style.left=i;
+	}
+}
+</script>
+<style>
+body{font-family:arial;}
+a{color:black;text-decoration:none;font:bold}
+a:hover{color:#606060}
+td.menu{background:lightblue}
+
+table.nav
+{
+background:black;
+position:relative;
+font: bold 80% arial;
+top:0px;
+left:-135px;
+}
+</style>
+
+<style>
+table
+{
+background:black;
+}
+a
+{
+text-decoration:none;
+color:#000000;
+}
+th
+{
+width:150px;
+background:#FF8080;
+}
+td
+{
+font:bold;
+background:#ADD8E6;
+}
+</style>
+
+<style>
+body{font-family:arial;}
+table{font-size:80%;background:black}
+a{color:black;text-decoration:none;font:bold}
+a:hover{color:#606060}
+td.menu{background:lightblue}
+table.menu
+{
+font-size:100%;
+position:absolute;
+visibility:hidden;
+}
+</style>
+<script type="text/javascript">
+
+function gettip(txt)
+{
+document.getElementById('tip').innerHTML=txt;
+}
+function reset()
+{
+document.getElementById('tip').innerHTML=" ";
+}
+function show_alert()
+{
+alert("Hello! I am an alert box!");
+}
+
+
+function disp_alert()
+{
+alert("Hello again! This is how we" + '\n' + "add line breaks to an alert box!");
+}
+
+function show_confirm()
+{
+var r=confirm("Press a button!");
+
+  
+
+  
+}
+
+function disp_prompt()
+{
+var fname=prompt("Please enter your name:","Your name")
+document.getElementById("msg").innerHTML="Greetings " + fname
+}
+
+
+
+function showmenu(elmnt)
+{
+document.getElementById(elmnt).style.visibility="visible";
+}
+function hidemenu(elmnt)
+{
+document.getElementById(elmnt).style.visibility="hidden";
+}
+
+
+var i=-135;
+var intHide;
+var speed=3;
+function showmenu()
+{
+clearInterval(intHide);
+intShow=setInterval("show()",10);
+}
+function hidemenu()
+{
+clearInterval(intShow);
+intHide=setInterval("hide()",10);
+}
+function show()
+{
+if (i<-12)
+	{
+	i=i+speed;
+	document.getElementById('myMenu').style.left=i;
+	}
+}
+function hide()
+{
+if (i>-135)
+	{
+	i=i-speed;
+	document.getElementById('myMenu').style.left=i;
+	}
+}
+</script>
+</script>
+
+</head>
+<body>
+The content of the body element is displayed in your browser.
+<pre>
+This is
+preformatted text.
+It preserves      both spaces
+and line breaks.
+</pre>
+
+<p>
+<a href="http://www.google.com/">
+This text</a> is a link to a page on 
+the World Wide Web.
+</p>
+
+
+<p>No border around the image, but still a link:
+<a href="http://www.google.com/">
+<img border="0" src="smiley.gif" alt="HTML tutorial" width="32" height="32" />
+</a></p>
+
+
+<a href="http://www.google.com/" target="_blank">Google Home PAGE</a> 
+<p>
+If you set the target attribute of a link to "_blank",
+the link will open in a new window.
+</p>
+<p>This is inside a IFrame</p>
+<!--<iframe src="http://www.google.com" width=600 height=400 id="rightMenu"></iframe> -->
+
+
+
+<p>A Table inside a Table </p>
+
+<table border="1">
+<tr>
+  <td>
+   <p>This is a paragraph</p>
+   <p>This is another paragraph</p>
+  </td>
+  <td>This cell contains a table:
+   <table border="1">
+   <tr>
+     <td>ABCDEFGHIJ</td>
+     <td>ABCDEFGHIJ</td>
+   </tr>
+   <tr>
+     <td>ABCDEFGHIJ</td>
+     <td>ABCDEFGHIJ</td>
+   </tr>
+   </table>
+  </td>
+</tr>
+<tr>
+  <td>This cell contains a list
+   <ul>
+    <li>apples</li>
+    <li>bananas</li>
+    <li>pineapples</li>
+   </ul>
+  </td>
+  <td>HELLO</td>
+</tr>
+</table>
+
+
+<p>******************************************************************************************************</p>
+<p> Order List </p>
+
+<h4>An Unordered List:</h4>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+
+
+
+
+<p>************************************************************************************************************** </p>
+
+
+<h4>Numbered list:</h4>
+<ol>
+ <li>Apples</li>
+ <li>Bananas</li>
+ <li>Lemons</li>
+ <li>Oranges</li>
+</ol>  
+
+<h4>Letters list:</h4>
+<ol type="A">
+ <li>Apples</li>
+ <li>Bananas</li>
+ <li>Lemons</li>
+ <li>Oranges</li>
+</ol>  
+
+<h4>Lowercase letters list:</h4>
+<ol type="a">
+ <li>Apples</li>
+ <li>Bananas</li>
+ <li>Lemons</li>
+ <li>Oranges</li>
+</ol>  
+
+<h4>Roman numbers list:</h4>
+<ol type="I">
+ <li>Apples</li>
+ <li>Bananas</li>
+ <li>Lemons</li>
+ <li>Oranges</li>
+</ol>  
+
+<h4>Lowercase Roman numbers list:</h4>
+<ol type="i">
+ <li>Apples</li>
+ <li>Bananas</li>
+ <li>Lemons</li>
+ <li>Oranges</li>
+</ol>  
+
+<p>************************************************************************************************************** </p>
+
+
+
+
+<h4>A nested List:</h4>
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+    <li>Black tea</li>
+    <li>Green tea
+      <ul>
+      <li>China</li>
+      <li>Africa</li>
+      </ul>
+    </li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+<p>************************************************************************************************************** </p>
+
+<form action="">
+First name			: 	<input type="text" name="firstname" /><br /><br />
+Last name			: 	<input type="text" name="lastname" /> <br /><br />
+Middle name			: 	<input type="text" name="firstname" /><br /><br />
+Nick name			: 	<input type="text" name="lastname" /><br /><br />
+Employee ID			: 	<input type="text" name="firstname" /><br /><br />
+Employee emailID	: 	<input type="text" name="lastname" /> <br /><br />
+Address				: 	<input type="text" name="firstname" /><br /><br />
+</form>
+
+<p>************************************************************************************************************** </p>
+
+<form action="">
+Username: <input type="text" name="user" /><br /> <br/>
+Password: <input type="password" name="password" /><br /> <br/>
+</form>
+
+<p>************************************************************************************************************** </p>
+
+<h4>CHECK BOX:</h4>
+
+<form action="">
+I have a bike:
+<input type="checkbox" name="vehicle" value="Bike" checked="checked">
+<br /><br />
+I have a car: 
+<input type="checkbox" name="vehicle" value="Car">
+<br /><br />
+I have an airplane: 
+<input type="checkbox" name="vehicle" value="Airplane" checked="checked"><br />
+
+<p>************************************************************************************************************** </p>
+
+<h4>RADIO BUTTON:</h4>
+<form action="">
+Male: <input type="radio" checked="checked" name="Sex" value="male" /><br />
+Female: <input type="radio" name="Sex" value="female" />
+</form>
+<p>************************************************************* *************************************************</p>
+
+<h4>Drop Down</h4>
+
+<form action="">
+<select name="cars">
+<option value="volvo">Volvo</option>
+<option value="saab">Saab</option>
+<option value="fiat">Fiat</option>
+<option value="audi">Audi</option>
+</select>
+</form>
+
+<p>************************************************************* *************************************************</p>
+<form action="">
+<select name="cars">
+<option value="volvo">Volvo</option>
+<option value="saab">Saab</option>
+<option value="fiat" selected="selected">Fiat</option>
+<option value="audi">Audi</option>
+</select>
+</form>
+
+<p>************************************************************* *************************************************</p>
+<p> This example cannot be edited because our editor uses a textarea for input, and your browser does not allow a textarea inside a textarea. </p> <textarea rows="10" cols="30"> The cat was playing in the garden. </textarea> 
+<p>************************************************************* *************************************************</p>
+
+<form action="">
+<input type="button" value="Hello world!"><input type="button" value="Hello world!s"><input type="button" value="Hello world!ss"><input type="button" value="Hello world!ss">
+</form>
+
+<p>************************************************************************************************************** </p>
+
+<form name="input" action="html_form_action.asp" method="get">
+First name: <input type="text" name="FirstName" value="Mickey" /><br />
+Last name: <input type="text" name="LastName" value="Mouse" /><br />
+<input type="submit" value="Submit" />
+</form> 
+<p>************************************************************* *************************************************</p>
+
+<img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap" />
+
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" alt="Sun" href="http://www.google.co.in/#hl=en&source=hp&q=sun&aq=f&aqi=&aql=&oq=&gs_rfai=&fp=1f65387b254acd8e" />
+  <area shape="circle" coords="90,58,3" alt="Mercury" href="http://www.google.co.in/#hl=en&source=hp&q=mercury&aq=f&aqi=&aql=&oq=&gs_rfai=&fp=1f65387b254acd8e" />
+  <area shape="circle" coords="124,58,8" alt="Venus" href="http://www.google.co.in/#hl=en&source=hp&q=venus&aq=f&aqi=&aql=&oq=&gs_rfai=&fp=1f65387b254acd8e" />
+</map>
+
+<p>************************************************************************************************************** </p>
+
+
+<p>
+Move the mouse over the image, and look at the status bar to see how the
+coordinates change.
+</p>
+
+<p>
+<a href="tryhtml_ismap.htm">
+<img src="planets.gif"
+ismap width="146" height="126">
+</a>
+</p>
+<p>************************************************************************************************************** </p>
+
+<input type="button" onclick="show_alert()" value="Show alert box" /> <p>   </p> <input type="button" onclick="disp_alert()" value="Display alert box" /> <p>   </p> 
+<input type="button" onclick="show_confirm()" value="Show a confirm box" /><p>   </p><input type="button" onclick="disp_prompt()" value="Display a prompt box" /><div id="msg"></div>
+<p>************************************************************************************************************** </p>
+
+
+<h3>Drop down menu</h3>
+<table width="100%">
+ <tr bgcolor="#FF8080">
+  <td onmouseover="showmenu('tutorials')" onmouseout="hidemenu('tutorials')">
+   <a href="/default.asp">Tutorials</a><br />
+   <table class="menu" id="tutorials" width="120">
+   <tr><td class="menu"><a href="/html/default.asp">HTML</a></td></tr>
+   <tr><td class="menu"><a href="/xhtml/default.asp">XHTML</a></td></tr>
+   <tr><td class="menu"><a href="/css/default.asp">CSS</a></td></tr>
+   <tr><td class="menu"><a href="/xml/default.asp">XML</a></td></tr>
+   <tr><td class="menu"><a href="/xsl/default.asp">XSL</a></td></tr>
+   </table>
+  </td>
+  <td onmouseover="showmenu('scripting')" onmouseout="hidemenu('scripting')">
+   <a href="/default.asp">Scripting</a><br />
+   <table class="menu" id="scripting" width="120">
+   <tr><td class="menu"><a href="/js/default.asp">JavaScript</a></td></tr>
+   <tr><td class="menu"><a href="/vbscript/default.asp">VBScript</a></td></tr>
+   <tr><td class="menu"><a href="default.asp">DHTML</a></td></tr>
+   <tr><td class="menu"><a href="/asp/default.asp">ASP</a></td></tr>
+   <tr><td class="menu"><a href="/ado/default.asp">ADO</a></td></tr>
+   </table>
+  </td>
+  <td onmouseover="showmenu('validation')" onmouseout="hidemenu('validation')">
+   <a href="/site/site_validate.asp">Validation</a><br />
+   <table class="menu" id="validation" width="120">
+   <tr><td class="menu"><a href="/site/site_validate.asp">Validate HTML</a></td></tr>
+   <tr><td class="menu"><a href="/site/site_validate.asp">Validate XHTML</a></td></tr>
+   <tr><td class="menu"><a href="/site/site_validate.asp">Validate CSS</a></td></tr>
+   <tr><td class="menu"><a href="/site/site_validate.asp">Validate XML</a></td></tr>
+   <tr><td class="menu"><a href="/site/site_validate.asp">Validate WML</a></td></tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<p>Mouse over these options to see the drop down menus</p>
+<p>************************************************************************************************************** </p>
+
+
+<b>Mouse over the links to see their descriptions</b><br />
+<table width="400px">
+<tr>
+<th>
+<a href="http://www.w3schools.com" 
+onmouseover="gettip('W3Schools is the best Web Developers resource on the Web')"
+>W3Schools.com</a>
+</th>
+<td rowspan="3" id="tip"> </td>
+</tr>
+<tr>
+<th>
+<a href="http://www.microsoft.com" onmouseover="gettip('Internet Explorer is winning the browser war')"
+>Internet Explorer</a>
+</th>
+</tr>
+<tr>
+<th>
+<a href="http://my.netscape.com" onmouseover="gettip('The Navigator is Netscapes browser tribute to web surfers')"
+>Netscape Navigator</a>
+</th>
+</tr>
+</table>
+<p>************************************************************************************************************** </p>
+
+
+
+<table id="myMenu" class="nav" width="150" onmouseover="showmenu()" onmouseout="hidemenu()">
+<tr><td class="menu"><a href="/default.asp">HOME</a></td>
+<td rowspan="5" align="center" bgcolor="#FF8080">M<br />E<br />N<br />U</td></tr>
+<tr><td class="menu"><a href="/asp/default.asp">ASP</a></td></tr>
+<tr><td class="menu"><a href="/js/default.asp">JavaScript</a></td></tr>
+<tr><td class="menu"><a href="default.asp">DHTML</a></td></tr>
+<tr><td class="menu"><a href="/vbscript/default.asp">VBScript</a></td></tr>
+</table>
+<p>Mouse over the MENU to show/hide the menu</p>
+<p>Try changing the "speed" variable in the script, to change the menus's sliding speed</p>
+</body>
+<p>************************************************************************************************************** </p>
+
+<table id="myMenus" class="navs" width="150" onclick="show_hide_menu()">
+<tr><td class="menu"><a href="/default.asp">HOME</a></td>
+<td rowspan="5" align="center" bgcolor="#FF8080">M<br />E<br />N<br />U</td></tr>
+<tr><td class="menu"><a href="/asp/default.asp">ASP</a></td></tr>
+<tr><td class="menu"><a href="/js/default.asp">JavaScript</a></td></tr>
+<tr><td class="menu"><a href="default.asp">DHTML</a></td></tr>
+<tr><td class="menu"><a href="/vbscript/default.asp">VBScript</a></td></tr>
+</table>
+<p>Click on the MENU to show/hide the menu</p>
+<p>Try changing the "speed" variable in the script, to change the menus's sliding speed</p>
+
+
+</html>
